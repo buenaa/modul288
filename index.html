@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>SBB Light</title>
+	<link rel="stylesheet" href="style.css"/>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+	<script src="https://kit.fontawesome.com/452ef8ef32.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container mt-4">
+		<div class="header">
+			<h1>SBB Light</h1>
+		</div>
+
+		<div class="row mt-5">
+			<div class="col-6">
+				<label for="from">From:</label>
+				<select id="from" class="form-select" aria-label="Default select example">
+					<option value="" selected>Choose Location</option>
+					<option value="Winterthur">Winterthur</option>
+					<option value="Horgen">Horgen</option>
+					<option value="Genève">Genf</option>
+					<option value="Zürich">Zürich</option>
+					<option value="Bern">Bern</option>
+					<option value="Lausanne">Lausanne</option>
+				</select>
+			</div>
+			<div class="col-6">
+				<label for="to">To:</label>
+				<select id="to" class="form-select" aria-label="Default select example">
+					<option value="" selected>Choose Location</option>
+					<option value="Winterthur">Winterthur</option>
+					<option value="Horgen">Horgen</option>
+					<option value="Genève">Genf</option>
+					<option value="Zürich">Zürich</option>
+					<option value="Bern">Bern</option>
+					<option value="Lausanne">Lausanne</option>
+				</select>
+			</div>
+			<div class="col-6 mt-4">
+				<label for="date" class="form-label">Departure:</label>
+				<input type="date" class="form-control" id="date" placeholder="tt.mm.jjjj">
+			</div>
+			<div class="col-3 mt-4">
+				<label for="hours" class="form-label">Hours:</label>
+				<select id="hours" class="form-select" aria-label="Default select example"></select>
+			</div>
+			<div class="col-3 mt-4">
+				<label for="minutes" class="form-label">Minutes:</label>
+				<select id="minutes" class="form-select" aria-label="Default select example"></select>
+			</div>
+		</div>
+		<button type="button" class="btn btn-lg btn-outline-danger mt-4" onclick="search()">Search</button>
+		
+		<!--	in js file auch html	-->
+		<div id="result"></div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 60px !important;
+    text-align: center;
+}
+
+.name {
+    font-size: 20px;
+}
+
+div.text-right {
+    text-align: right;
+}
+
+div.text-middle {
+    text-align: center;
+}
+
+div.well {
+    background-color: #f6f6f6;
+    border-radius: 8px;
+}
+
+img.train {
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-top: 20px;
+    width: 25%;
+}
